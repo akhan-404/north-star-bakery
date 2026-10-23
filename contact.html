@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Contact North Star Bakery</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+ <img src="bakery-logo_c.png" alt="North Star Bakery logo with a bread design" width="160">
+ <nav aria-label="Main navigation">
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="products.html">Products</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="contact.html">Contact</a></li>
+  </ul>
+ </nav>
+</header>
+<main class="site-content">
+<h1>Contact us</h1>
+<p>Want to order ahead or ask something? Fill this out and include what
+items you need. This is a class demo form and does not send messages to the bakery.</p>
+
+<section class="hours-box">
+  <h2>Where we are</h2>
+  <p>125 Maple Avenue, Cedar Grove, MN (sample address)</p>
+  <p>Tuesday-Friday 7 a.m.-5 p.m.; Saturday 8 a.m.-3 p.m.;
+  Sunday 8 a.m.-1 p.m. We are closed Monday.</p>
+</section>
+
+<h2>Pre-order and question form</h2>
+<form method="post" action="#">
+ <fieldset>
+   <legend>Contact information</legend>
+   <p><label for="customer-name">Your name</label>
+   <input id="customer-name" name="customer_name" type="text" minlength="2" required></p>
+
+   <p><label for="customer-email">Email</label>
+   <input required type="email" name="customer_email" id="customer-email"></p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Tell us what you need</legend>
+  <p><label for="kind">Request type</label>
+   <select name="request_type" id="kind" required>
+      <option value="">Choose one</option>
+      <option value="preorder">Pre-order</option>
+      <option value="question">General question</option>
+   </select></p>
+
+  <p><label for="date">Pickup date, if ordering</label>
+  <input id="date" name="pickup_date" type="date"></p>
+
+  <p><label for="order-details">Items or question</label>
+  <textarea name="details" id="order-details" rows="4" required></textarea></p>
+
+  <p><label for="allergy-info">Allergy notes (if any)</label>
+  <textarea rows="3" id="allergy-info" name="allergies"></textarea></p>
+ </fieldset>
+ <button type="submit">Send request</button>
+</form>
+</main>
+<footer>
+ <p>North Star Bakery | Cedar Grove, Minnesota</p>
+ <p><a href="products.html">Back to bakery products</a></p>
+</footer>
+</body>
+</html>
