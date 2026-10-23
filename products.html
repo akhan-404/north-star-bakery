@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -23,6 +24,13 @@
 <p>Here's a look at our main products. These prices are sample ranges,
 not an online store.</p>
 
+<section class="pick-box" aria-labelledby="pick-heading">
+  <h2 id="pick-heading">Save something for later</h2>
+  <p>See something you like? Save it here and it will still be picked when you come back. It can also fill in part of the contact form.</p>
+  <p id="saved-pick" aria-live="polite">Nothing saved yet.</p>
+  <button type="button" id="clear-pick" class="clear-button">Clear saved item</button>
+</section>
+
 <section>
  <h2>Bread</h2>
  <p>Sourdough, wheat bread and sandwich loaves. $6-$12 per loaf.</p>
@@ -34,18 +42,21 @@ not an online store.</p>
    <figcaption>Signature Loaf: our round loaf with a thick crust. Good with soup or sandwiches.</figcaption>
  </figure>
  </div>
+ <p><button type="button" data-save-item="signature">Save this item</button></p>
 </section>
 
 <section>
 <h2>Pastries</h2>
 <p>We make cookies, croissants and other breakfast pastries. Most are
 around $3-$7 each. Larger orders can be requested ahead of time.</p>
+<p><button type="button" data-save-item="pastries">Save this item</button></p>
 </section>
 
 <section>
   <h2>Cakes</h2>
   <p>Birthday cakes and simple cakes for family events.</p>
   <p>Usually $30-$80 depending on size and what you ask for.</p>
+  <p><button type="button" data-save-item="cake">Save this item</button></p>
 </section>
 
 <h2>Ordering</h2>
